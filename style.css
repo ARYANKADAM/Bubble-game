@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+#main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    overflow: hidden;
+    height: 90vh;
+    width: 90vw;
+    background-color: rgb(66, 79, 190);
+    border-radius: 10px;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 90vw;
+    background-color: rgb(21, 53, 192);
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#timer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#contents{
+    display: flex;
+    align-items: center;
+    padding: 0px 10vw;
+    gap: 10px;
+}
+#para{
+    color: white;
+    font-size: 18px;
+}
+#bottom{
+    width:100%;
+    height:calc(100% - 70px);
+    padding-top: 10px;
+    padding-left: 7px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+#bubble{
+    height: 40px;
+    width: 40px;
+    background-color:rgb(38, 64, 181);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+#bubble:hover{
+    background-color:rgb(5, 47, 234);
+}
+@media (max-width: 600px) {
+    #top {
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    #box {
+        width: 20px;
+        height: 20px;
+        font-size: 1rem;
+    }
+
+    #contents {
+        padding: 0 5%;
+        gap: 10px;
+        
+    }
+
+    #bottom {
+        padding-top: 10px;
+        margin-right: 10px;
+
+    }
+
+    #bubble {
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+    }
+}
+
